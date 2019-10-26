@@ -25,8 +25,6 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
-#Make errors better looking
-gem 'better_errors', '~> 2.5', '>= 2.5.1'
 
 #Bulma CSS
 gem 'bulma-rails', '~> 0.7.5'
@@ -49,9 +47,13 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+
+  #Make errors better looking
+  gem 'better_errors', '~> 2.5', '>= 2.5.1'
+  
   #Guard is a command line tool to easily handle events on file system modifications.
   gem 'guard', '~> 2.15', '>= 2.15.1'
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
 end
 
 group :test do
