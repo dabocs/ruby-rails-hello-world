@@ -1,2 +1,4 @@
 -- SQLite
-DELETE FROM `posts`;
+DELETE FROM `posts`
+where id=10
+;
